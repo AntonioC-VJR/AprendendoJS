@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body{
+
+            background-color: blue;
+            color: wheat;
+
+
+
+        }
+
+
+
+
+    </style>
+ 
+ 
+ 
+ 
+    <title>Aprendendo a usar DOM</title>
+
+
+
+</head>
+<body>
+
+    <h1> Aprendendo DOM </h1>
+
+    <p> Aprendendo a manipular HTML com <strong> DOM </strong></p>
+    <p> Dom é para Manipular o HTML</p>
+
+    <div id="msg"> Passe o mouse aqui </div>
+
+    <div name="msg2"> Alterando com o DOM  </div>
+
+    <div id="msg_3">  DOM DOM DOM  </div>
+
+    <script>
+
+        // Recebendo pela TAG
+        var p1 = window.document.getElementsByTagName('p')[0];
+        
+        //Recebendo pelo ID
+        var d = window.document.getElementById('msg')
+        
+        //Recebendo pelo DOM
+        var corpo = window.document.body
+
+        //Recebendo pelo nome
+        var msg_2 = window.document.getElementsByName('msg2')[0]
+
+
+        //Revebendo por Query
+        var msg_3 = window.document.querySelector('div#msg_3')
+
+
+        p1.style.color = 'red'
+        window.document.write("Aqui está escrito assim: " + p1.innerHTML)
+
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+
+        corpo.style.background = 'purple'
+
+
+        msg_2.style.color = 'gray'
+        msg_2.style.padding = '3px'
+        msg_2.style.border = '2px solid red'
+
+
+
+        msg_3.style.margin = '25px'
+        msg_3.style.padding = '3px'
+        msg_3.style.outline = '2px solid green'
+        msg_3.style.texttransform = 'uppercase'
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

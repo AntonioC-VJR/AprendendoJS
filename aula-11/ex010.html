@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   Verifica Velocidade   </title>
+</head>
+<body>
+
+
+        <h1> Sistema de Multas </h1>
+
+        Velocidade: <input type="number" name="velocidade" id="velocidade">
+        <input type="button" value="Enviar" onclick="calcular()">
+        <div id="res">
+
+
+
+        </div>
+
+    <script>
+
+        
+        function calcular(){
+          
+            var txtvel = window.document.getElementById("velocidade")
+            var res = window.document.getElementById("res")
+
+            var velocidade = Number(txtvel.value)
+
+            res.innerHTML = `A velocidade é de: ${velocidade} km/h`
+            
+            if (velocidade > 60){
+
+                res.innerHTML = 'A velocidade está acima da velocidade: <b> MULTADO </b>'
+
+            }
+            
+            res.inerHTML += '<p> Dirija com segurança e use sinto <p>'
+
+        }
+            
+            
+
+
+        // var vel = window.prompt('Qual foi sua velocidade')
+
+        /*
+        if (Number(vel) > 60){
+
+            
+            window.alert(`Sua velociade ${vel} KM/H  -  Acima da velocidade Permitida`)
+            document.write(`Sua velociade ${vel} KM/H  -  Acima da velocidade Permitida`)
+
+
+        }  
+        */
+
+    </script>
+
+
+
+    
+</body>
+</html>

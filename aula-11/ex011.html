@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem da Pessoa</title>
+    <style>
+
+        div{
+
+            outline: 2px solid black;
+            
+            width: 200px;
+            height: 150px;
+            
+            margin: 20px;
+            padding: 15px;
+
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <label>Qual é o seu País:</label>
+    <select id="pais" name="pais">
+        <option value="BRASIL">  BRASIL </option>
+        <option value="FRANÇA">  FRANÇA </option>
+        <option value="ITÁLIA">  ITÁLIA </option>
+        <option value="JAPÃO">  JAPÃO </option>
+        <option value="USA">  USA </option>
+    </select>
+
+    <input type="button" value="Enviar" onclick="verifica()">
+
+    <div id="res">
+
+
+
+
+
+    </div>
+    <script>
+    
+        function verifica(){
+
+            var dado = document.getElementById("pais")
+            var pais = (dado.value)    
+            var res = document.getElementById("res")
+
+            res.innerHTML = `Seu país é:  ${pais}`
+
+            if(pais == 'BRASIL'){
+
+                res.innerHTML += '<p>Você é Brasileiro</p>'
+
+                res.style.background = 'green'
+                res.style.color = 'white'
+
+
+            } else {
+
+                res.innerHTML += '<p> Você é estrangeiro </p>'
+
+                res.style.background = 'red'
+                res.style.color = 'white'
+
+            }
+        }
+
+    </script>
+
+
+
+</body>
+</html>

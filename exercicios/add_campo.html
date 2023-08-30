@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="PT-BR">
+<style>
+
+	.botao{
+
+		width: 90px;
+		height: 50px;
+		background-color: aquamarine;
+
+		margin: 10px;
+
+		display: inline-block;
+
+		justify-content: center;
+		align-items: center;
+
+
+	}
+
+	.botao:hover{
+
+		background-color: aqua;
+
+
+	}
+
+	input[type="text"]{
+
+		display: inline-block;
+
+	}
+
+
+
+</style>
+
+
+
+
+<head>
+
+
+<body>
+
+<form action="#" method="post">
+	
+	
+		<input type="text" name="dado">
+		<div id="campos">
+	
+		</div>
+	
+	
+	<div class="botao" id="add" onclick="add">
+
+		<h3>Enviar</h3>
+	
+	</div>
+
+
+	<!-- <button id="button" onclick="add()"> ADD </button> -->
+
+	
+	<script>
+	
+		var a = window.document.getElementById("add");
+		var campo = window.document.getElementById("campos")
+
+		a.addEventListener('click', add)
+
+
+		function add(){
+
+			pular = document.createElement("br")
+			
+			
+			novo_campo = document.createElement("input");
+			novo_campo.name = "campo_teste";
+			novo_campo.type = "text";
+
+			campo.appendChild(novo_campo);
+			campo.appendChild(pular);
+			
+		}
+	
+	</script>
+	
+	<input type="submit">
+	
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>

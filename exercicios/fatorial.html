@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Fatorial</title>
+</head>
+<body>
+    
+    
+    <script>
+
+        var resultado = 1;
+
+        var fatorial = window.prompt("Qual valor você deseja saber a fatorial?");
+        var s =  Number.parseInt(fatorial);
+
+        if(s > 170){
+
+            document.write(`O Valor ${s} é muito alto o valor máximo para calculo é 170`);
+
+
+        } else {
+
+            while(s > 0){
+
+            resultado = Number(resultado) * Number(s);
+
+             s--
+
+        }
+
+        document.write("O resultado é: " + resultado);
+        
+        }
+
+    </script>
+    
+
+</body>
+</html>

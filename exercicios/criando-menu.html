@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Suspenso</title>
+    <style>
+
+        #menu {
+
+            padding: 10px;
+            margin-top: 100px;
+            background-color: aquamarine;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            display: inline-block;
+
+            margin: 0px;
+
+
+        }
+
+        
+        #menu2 {
+
+            padding: 10px;
+            margin-top: 100px;
+            background-color: aquamarine;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            display: none;
+
+            margin: 0px;
+
+        }
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    
+    <a href="#" id="menu"  onclick="passar()" onmouseout="sair()">  Teste  </a>
+    <a href="#" id="menu2" onmouseenter="submenu()"  onmouseout="sair()">  Submenu  </a>
+    <a href="#" id="menu2" onmouseenter="submenu()"  onmouseout="sair()">  Submenu  </a>
+    <a href="#" id="menu2" onmouseenter="submenu()"  onmouseout="sair()">  Submenu  </a>
+
+
+    <script>
+
+        var a = window.document.getElementById("menu");
+        var b = window.document.getElementById("menu2");
+
+        var verifica = 0;
+
+        a.addEventListener('mouseenter', passar);
+        a.addEventListener('mouseout', sair);
+        b.addEventListener('mouseenter', passar)
+
+
+
+        function passar(){
+
+            verifica = 1
+
+            if (verifica == 1){
+
+            a.style.background = 'red'
+            a.marginRight = 0
+
+            b.style.display = 'inline-block'
+        
+
+            
+            } else {}
+           
+        }
+
+        function sair(){
+
+
+            verifica = 0;
+
+            a.style.padding = "10px"
+            a.style.margintop = "100px"
+            a.style.background = "aquamarine"
+            a.style.textdecoration = "none"
+            a.style.texttransform = "uppercase"
+            a.style.display = "inline-block"
+            
+
+            b.style.display = 'none'
+
+
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

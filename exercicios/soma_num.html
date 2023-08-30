@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebe números e Soma</title>
+</head>
+<body>
+    <script>
+
+        var s = 0;
+        var valor = 0;
+        var qtd = window.prompt("Quantos números você vai somar ?");
+        Number.parseInt(qtd);
+
+        while(s < qtd){
+            
+            s++;
+
+            var soma = window.prompt(` Digite o ${s}° valor`)
+            Number.parseInt(soma)
+
+           valor = Number(valor) + Number(soma); 
+            
+            
+        }
+
+        document.write(`O valor da soma foi:  ${valor}`)
+
+
+
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

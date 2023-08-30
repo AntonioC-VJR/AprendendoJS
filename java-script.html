@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World - Java Script</title>
+    <style>
+
+        p{
+
+            color:green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <h1> Básico de Java Script </h1>
+
+
+    <h2> Escrever na Tela </h2>
+    <script> 
+         
+        var nome = "Antonio Carlos";
+        var idade = 28;
+        var ant_criminais = true;
+        
+        document.write("Hello World");
+        document.write("<br>");
+
+        document.write("Seu nome é: "); 
+        document.write(nome); 
+
+        document.write("<br>");
+
+        document.write("Sua idade é: ");
+        document.write(idade);
+
+        document.write("<br>");
+
+        document.write("Seu Antecedente Criminal: ");
+        document.write(ant_criminais);
+
+    </script>  
+
+    <h2> Teste de Validação - IF e Else </h2>
+
+    <script> 
+
+        if(idade < 18 || ant_criminais == true){
+
+            document.write("Reprovado para a Vaga");
+
+        } else if(idade >= 18 && ant_criminais == true){
+    
+            document.write("Reprovado para a Vaga");
+        
+
+        } else {
+
+            document.write(nome);
+            document.write("<p>");
+            document.write("Aprovado para a Vaga");
+            document.write("</p>");
+        }
+
+    </script>
+
+
+
+
+
+</body>
+</html>

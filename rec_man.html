@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebendo e Manipulando dados</title>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt("Qual é seu nome?")
+        var salario = window.prompt("Qual é o seu salário?")
+        var idade = window.prompt("Qual sua idade?")
+        var valida = window.confirm("Todas as informações são verdadeiras?")
+
+        if(valida == true){
+        
+            document.write(`Seu nome é:  ${nome.toUpperCase()}  e  sua idade é   ${Number.parseInt(idade)} <br>`)
+            document.write("Seu salário é: " + Number.parseFloat(salario).toLocaleString('pt-BR',{style:'currency', currency: 'BRL'}) + "<br>")
+            document.write("Dados salvos com sucesso")
+
+            // .toFixed(2).replace('.' , ',') -> Substituir
+
+        } else {
+
+            document.write("Aceitamos apenas informações verdadeiras")
+
+        }
+
+
+    </script>
+</body>
+</html>
